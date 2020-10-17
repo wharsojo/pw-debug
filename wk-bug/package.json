@@ -1,0 +1,16 @@
+{
+  "name": "wk-bug",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "make-fetch-happen": "^8.0.10",
+    "playwright": "^1.4.2"
+  }
+}
