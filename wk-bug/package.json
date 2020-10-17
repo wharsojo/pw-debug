@@ -11,6 +11,6 @@
   "license": "ISC",
   "devDependencies": {
     "make-fetch-happen": "^8.0.10",
-    "playwright": "^1.4.2"
+    "playwright": "^1.5.1"
   }
 }

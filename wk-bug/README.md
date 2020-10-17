@@ -1,6 +1,6 @@
 # Only Chromium browser behave expected to route.fulfill()
 
-During development of [mitm-play](https://www.npmjs.com/package/mitm-play), I discover that only Chromium beharior is expected, other browsers failed. here is the scenario:
+During development of [mitm-play](https://www.npmjs.com/package/mitm-play), I discover that only Chromium behave expected, other browsers failed. here is the scenario:
 * user set some route logic 
 * user browsing to keybr.com
 * when first call to `css`, route will call `route.continue()`
