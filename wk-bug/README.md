@@ -1,4 +1,4 @@
-# Only Chromium browser behave expected to route.fulfill()
+# Firefox & WebKit behave un-expected to route
 
 During development of [mitm-play](https://www.npmjs.com/package/mitm-play), I discover that only Chromium behave expected, other browsers failed. here is the scenario:
 * user set some route logic 

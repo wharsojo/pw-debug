@@ -46,7 +46,6 @@ const page = {};
 
     await page[browserType].goto('https://keybr.com');
     page[browserType].on('close', async () => {
-      await browser.close();
       process.exit();
     });
   }
