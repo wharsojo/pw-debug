@@ -26,14 +26,7 @@ const page = {};
     await context[browserType].route('**/*', async (route, request) => {
       const url = request.url();
 
-      if (url.match(/google|doubleclick|a\.pub\.network/)) {
-        route.fulfill(mock(url));
-      } else if (counter[browserType]>1 && url.match(/\.css/)) {
-        const resp = await fetch(url);
-        resp.body = `${resp.body}\n${css}`;
-        console.log(`${browserType} CSS Update!`, url, counter[browserType]); 
-        route.fulfill(resp);
-      } else if (url.match(/keybr.com\/$/)) {
+      if (url.match(/example\.com\/$/)) {
         const resp = await fetch(url);
         counter[browserType] += 1;
         resp.body = `${resp.body}`.replace('</h1>',`</h1><h2>COUNTER: ${counter[browserType]}</h2>`)
@@ -44,7 +37,7 @@ const page = {};
       }
     });
 
-    await page[browserType].goto('https://keybr.com');
+    await page[browserType].goto('https://example.com');
     page[browserType].on('close', async () => {
       process.exit();
     });
